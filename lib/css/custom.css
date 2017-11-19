@@ -1,0 +1,149 @@
+.reveal h2 {
+    font-size: 1.3em;
+}
+.reveal .flex {
+    display: flex;
+}
+.reveal .logo-box {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.img-back {
+    background: #fff;
+}
+.reveal section .img-back img {
+    max-width: 100%;
+    box-shadow: none;
+    margin: 20px 0 0 ;
+}
+.reveal .pac pre {
+    width: 100%;
+}
+.reveal pre  {
+    margin:  0 auto 0 0 ;
+}
+.reveal .example1 {
+    font-size: 0.875rem;
+    line-height: 1;
+}
+.reveal .path-list {
+    font-size: 0.75rem;
+    color:#222222;
+    
+}
+.reveal .path-list ul li {
+    list-style-type: none;
+}
+.reveal section ol{
+    width: 100%;
+}
+.reveal section  pre{
+    box-shadow: none;
+}
+.reveal section ol.use-list pre{
+    margin:0;
+    line-height: 0;
+}
+.reveal section ol.use-list pre code{
+    margin:0;
+    line-height: 1.2em;
+}
+.reveal section .trick-list {
+    font-size: 0.9em;
+    width: 100%;
+}
+.reveal section .positive-text {
+    color:#77DBAC;
+    font-size: 0.775em;
+}
+.reveal .start {
+    height: 50px;
+    align-self: center;
+    cursor: pointer;
+}
+/*pacman animation*/
+.pacman-ext .pacman,
+.pacman-ext  .pacman-text {
+    fill:#EBEC8E;
+}
+
+svg {
+    padding: 5px;
+}
+
+.pacman-stroke .pacman-text{
+    font-size: 0rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.pacman-stroke:hover  .pacman-text{
+    animation:.5s textIn 1.8s ease-in-out forwards;
+}
+@keyframes textIn{
+    0%{
+      font-size: 0rem;
+    }
+    100%{
+      opacity: 1; 
+      font-size: 0.875rem;
+    }     
+}
+.pacman-stroke .pacman{
+    fill:transparent;
+    transition: fill .3s;
+}
+.pacman-stroke:hover .pacman{
+    animation:borderIn 10s linear forwards;
+    stroke:#000000;
+    stroke-width:1;
+    stroke-miterlimit:7;
+    stroke-dasharray:1000;
+    stroke-dashoffset:0;
+}
+@keyframes borderIn{
+    0%{
+      stroke-dashoffset:1000;
+    }
+    100%{
+      stroke-dashoffset:0;
+    }    
+}
+.pacman-stroke .pacman:hover {
+  fill:#EBEC8E;
+  transition: fill .3s;
+}
+.pacman-stroke .pacman-text:hover {
+  fill:#EBEC8E;
+}
+/*pacman responsive*/
+.pacman-resp .pacman, .pacman-resp .pacman-text {
+    fill:#EBEC8E;
+    stroke:#000000;
+    stroke-width:1;
+    transition: fill .3s;
+}
+@media (max-width: 500px) {
+    .pacman-resp .pacman, .pacman-resp .pacman-text {
+        fill:#000000;
+        stroke:#EBEC8E;
+        transition: fill .3s;
+    }
+}
+/**/      
+.figure-text {
+    color:#222222;
+    align-self: center;
+}
+.reveal section figure object {
+    padding-top: 25px;
+}
+.reveal iframe.svg-examples {
+    min-height: 500px;
+    min-width: 100%;
+}
+.reveal .cat-box {
+    justify-content: flex-end;
+}
+.reveal .cat-box  object{
+    transform: scale(0.6);
+}
